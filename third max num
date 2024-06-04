@@ -1,0 +1,13 @@
+def third_max(nums):
+    distinct_nums = set(nums)
+    if len(distinct_nums) < 3:
+        return max(distinct_nums)
+    distinct_nums.remove(max(distinct_nums))
+    distinct_nums.remove(max(distinct_nums))
+    return max(distinct_nums)
+nums = [2, 2, 3, 1]
+print(third_max(nums)) 
+nums = [1, 2]
+print(third_max(nums)) 
+nums = [3, 2, 1]
+print(third_max(nums))
