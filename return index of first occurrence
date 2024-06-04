@@ -1,0 +1,11 @@
+def str_str(haystack, needle):
+    try:
+        return haystack.index(needle)
+    except ValueError:
+        return -1
+haystack = "hello"
+needle = "ll"
+print(str_str(haystack, needle))  
+haystack = "aaaaa"
+needle = "bba"
+print(str_str(haystack, needle))  
